@@ -4,6 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biker Zone</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and daisy ui cdn added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Css styles -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body data-theme="light"></body>
+  <body data-theme="light" class="lg:w-[1130px] px-5 lg:mx-auto">
+    <header class="font-poppins">
+      <nav class="flex flex-col py-5 lg:flex-row lg:justify-between">
+        <div>
+          <h2 class="text-[#000000] font-bold text-center text-2xl lg:text-4xl">
+            Biker Zone
+          </h2>
+        </div>
+        <div class="flex justify-center gap-4 lg:gap-6">
+          <ul class="flex items-center gap-4 lg:gap-5">
+            <li class="font-medium text-sm lg:text-base">
+              <a href="#">Home</a>
+            </li>
+            <li class="font-medium text-sm lg:text-base">
+              <a href="#">Shop</a>
+            </li>
+            <li class="font-medium text-sm lg:text-base">
+              <a href="#">News</a>
+            </li>
+            <li class="font-medium text-sm lg:text-base">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="lg:text-xl text-base font-bold text-white bg-[#E76F51] rounded-[5px] py-3 lg:py-4 px-6 lg:px-12"
+          >
+            Login
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
